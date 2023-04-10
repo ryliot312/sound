@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 200px;
+  text-align: center;
+  background-image: url('Tech_1.jpg');
+  color: #000000;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #D2B48C;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: #D2B48C;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #6D929B;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    
+</div>
+
+    <div class="main">
+    <h2>Essential Expereience</h2>
+    <img src="Design_Doc_image.jpg" alt="Design Doc" style="height: 300px;">
+      
+    <p>You walk into a white room with only bluetooth headphones on. You see two cameras, one in the front of the room and one in the back. It’s mostly silent. You’re a little confused, and that confusion amplifies when you hear a strange-pitched noise in one of the corners of the room. You walk over to investigate, noticing that the sound gets louder as you walk near. Once you feel as if you’ve found where the source is coming from, a grand soundscape overtakes you and the room, almost as if the air around you has changed. Now, you hear a barrage of sounds, coming from all different places in the room. You freely investigate each sound, noticing that as you walk near a certain sound source, it becomes louder and the focus of your hearing. You walk to one side of the room, noticing that the reverb and ambience changes, almost as if you are walking into a building. Now the room feels like a giant cathedral, with massive echoes and chimes in the distance. You walk back the way you came and notice that it sounds as if you exited the building. You keep exploring all sides of the room, finding new and exciting sounds to discover. </p>
+    <br>
+  </div>
+
+<div class="footer">
+  <h2>SoundRoom</h2>
+</div>
+
+</body>
+</html>

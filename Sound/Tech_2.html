@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 200px;
+  text-align: center;
+  background-image: url('daw.jpeg');
+  color: #FFFFFF;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #D2B48C;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: #D2B48C;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #6D929B;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+</div>
+    
+
+    <div class="main">
+    <h2>Technical Description</h2> 
+        
+    <div class="row">
+  <div class="column">
+    <img src="azure.jpeg" alt="azure" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="Software_1.jpg" alt="Software" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="Unity.png" alt="Unity" style="width:100%">
+  </div>
+</div>
+      
+    <p>We will have a room that has either two kinects or webcams that will be on either end of the room. They will then be able to track the person in real time using either the Kinect program or p5js motion tracking for the webcams. The data that gets collected in these devices will then send the x, y coordinates of the person to Unity. Once Unity has these coordinates, it will relay the sound node that is closest to the person through bluetooth headphones. These sound nodes will be placed throughout the room using sound files that have been created in Wwise. The sound files, based on the x, y coordinates from the devices, will relay to Unity and Unity will play a specific sound when the person gets close to them or gets into a certain location in the room. Parallel to when these devices are sending coordinates and sound files to Unity and to the person, if using webcams, the webcams will be on its own LAN by pinging one another continuously to get the most accurate reading as to where the person is in the room. The bluetooth headphones will also have two red lights on one side and a green light on the other side for the devices to read head movements of the person. Once all of these devices and programs are talking to each other, the person will then be submerged into a sound heavy experience that they can explore.  </p>
+    <br>
+  </div>
+
+<div class="footer">
+  <h2>SoundRoom</h2>
+</div>
+
+</body>
+</html>
