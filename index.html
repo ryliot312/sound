@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>SoundRoom</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background-image: url('DAWS.png');
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #6D929B;
+  padding: 10px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: #D2B48C;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>SoundRoom</h1>
+</div>
+
+<div class="navbar">
+  <a href="Tech_1.html">Essential Experience</a>
+  <a href="Tech_2.html">Tech Page</a>
+    <p>By: Colin Winklemann, Luke Eckhardt, and Ryland BeDell</p>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About SoundRoom</h2>
+    <h3>Updates</h3>
+    <p>-Changing from webcam and Xbox Kinect to Azure Kinnect<br> 
+    </p>
+    <h3>Items That We Will Use</h3>
+     <img src="azure.jpeg" alt="Azure" style="height: 100px;"><br>
+      <img src="Software_1.jpg" alt="Software" style="height: 100px;"><br>
+      <img src="Unity.png" alt="Unity" style="height: 50px;">
+  </div>
+  <div class="main">
+    <h2>3-Dimensional Sound Room</h2>
+    <h5>SoundRoom Description, March 19, 2023</h5>
+    <img src="Design_Doc_image.jpg" alt="Design Doc" style="height: 300px;">
+    <p>This project asks the question "Can you build the illusion of a 3-dimensional space using only sound?". The target user for this project is really anyone who is interested in immersing themselves in a fully auditory space. We will take a medium-sized room, and using camera sensors, such as an Xbox Kinect Sensor, we will map out the room using a coordinate system. This way, the Kinect can sense where a person is moving throughout the room, and exact coordinates as to where. We will use Wwise or FMOD to create a fully dynamic soundscape in the room, with different pinpointed sounds at different locations in the room, using the coordinate system of the kinect. Bluetooth headphones will be applied to the user, so they can walk around the room freely without a change in the audio input signal. Ideally, the room would be a whiteout room, as to not give any visual context clues as to where they are. The essential experience is for someone to experience a reality in which sound is their only source of direct sensory input. The changing soundscape will make it feel as if the user is walking into different rooms, buildings, and scenes, all while staying in the same room. Pinpointed sounds will act as curiosities for users to find and pinpoint themselves. We want to explore the true depth of what creating a fully acoustic environment could look (rather, sound) like.</p>
+    <br>
+    <h2>Timeline</h2>
+      <img src="timeline.png" alt="Timeline" style="height: 200px;">
+    <p>*This timeline is subject to change</p>
+    <p>This timeline holds us as a team accountable for making deadlines.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>SoundRoom</h2>
+</div>
+
+</body>
+</html>
